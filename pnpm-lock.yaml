@@ -39,6 +39,9 @@ importers:
       '@granite-js/plugin-hermes':
         specifier: 1.0.32
         version: 1.0.32(@swc/helpers@0.5.17)
+      '@granite-js/plugin-micro-frontend':
+        specifier: 1.0.32
+        version: 1.0.32(@swc/helpers@0.5.17)
       '@granite-js/plugin-router':
         specifier: 1.0.32
         version: 1.0.32(@swc/helpers@0.5.17)
@@ -1298,6 +1301,9 @@ packages:
 
   '@granite-js/plugin-hermes@1.0.32':
     resolution: {integrity: sha512-GTvCMf4+8fWBefyoNzINM0oH4FCP+hZbzAK8tY1V5RBxAXMbdZldY9DsGjzrP6oxB8AtCtptq1qc0vhjP2KWBQ==}
+
+  '@granite-js/plugin-micro-frontend@1.0.32':
+    resolution: {integrity: sha512-gH0BzG/KOW0QoEyFurwhbnM67aC3Mx9zlkzC3KZtGD34sT7PrtCryG2Txx4zAHiMjskoxUF/8ZUW1PIKS/dXKQ==}
 
   '@granite-js/plugin-router@1.0.32':
     resolution: {integrity: sha512-2o1uL5mTgG8VeaXKUGBdzVpfI+UpwNeiaQWlJz1p4zhkh54Og1RfVfn0vcpw3ffPgtfV+GvfN4w4PZKsPUp8FA==}
@@ -6972,6 +6978,16 @@ snapshots:
       es-toolkit: 1.47.1
       execa: 5.1.1
       source-map: 0.8.0-beta.0
+    transitivePeerDependencies:
+      - '@swc/helpers'
+      - magicast
+
+  '@granite-js/plugin-micro-frontend@1.0.32(@swc/helpers@0.5.17)':
+    dependencies:
+      '@granite-js/plugin-core': 1.0.32(@swc/helpers@0.5.17)
+      '@granite-js/utils': 1.0.32
+      es-toolkit: 1.39.8
+      picocolors: 1.1.1
     transitivePeerDependencies:
       - '@swc/helpers'
       - magicast
